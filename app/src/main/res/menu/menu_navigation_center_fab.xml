@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/i_music"
+        android:checked="true"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+    <item
+        android:id="@+id/i_backup"
+        android:icon="@drawable/ic_videos"
+        android:title="Videos" />
+    <item
+        android:id="@+id/i_empty"
+        android:icon="@drawable/ic_popular"
+        android:title="Popular" />
+
+    <item
+        android:id="@+id/i_favor"
+        android:icon="@drawable/ic_bookmarked"
+        android:title="Saved" />
+    <item
+        android:id="@+id/i_visibility"
+        android:icon="@drawable/ic_local_news"
+        android:title="Local" />
+</menu>

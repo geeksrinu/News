@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/relative_layout_item_question_choice_global"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_choice_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <RelativeLayout
+            android:background="#60cccccc"
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp">
+            <CheckedTextView
+                android:id="@+id/checked_text_view_item_vote_choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                android:checkMarkTint="@color/white"
+                ></CheckedTextView>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/text_view_item_vote_choice"
+            android:layout_marginLeft="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Label"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

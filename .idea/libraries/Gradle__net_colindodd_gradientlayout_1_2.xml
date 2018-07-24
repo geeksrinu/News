@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: net.colindodd:gradientlayout-1.2">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/6cafa3717a3a48d7279e7c6b99784e22fd513d86/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/6cafa3717a3a48d7279e7c6b99784e22fd513d86/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.colindodd/gradientlayout/1.2/55c1f4254686a97eef2c2d56124b5c9922b7dcd/gradientlayout-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

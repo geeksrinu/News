@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">News App Pro</string>
+    <string name="panel_url">panel.ristana.com</string>
+
+    <string name="facebook_app_id">475344796197032</string>
+    <string name="fb_login_protocol_scheme">fb475344796197032</string>
+
+    <string name="AD_MOB_ENABLED_BANNER">true</string>
+    <string name="AD_MOB_ENABLED_INTERSTITAL">true</string>
+    <string name="AD_MOB_INTERSTITAL_TIME">10</string>
+
+    <string name="ad_unit_id_interstitial">ca-app-pub-3447169368463700/4426574296</string>
+    <string name="ad_unit_id_banner">ca-app-pub-3447169368463700/2183554335</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_server">Sorry something went wrong</string>
+    <string name="try_again">Try agin</string>
+    <string name="select_choice">Please select a answer</string>
+    <string name="no_connexion">Connection problem</string>
+    <string name="comment_number">Comments</string>
+    <string name="likes_number">Likes</string>
+    <string name="views_number">Views</string>
+    <string name="select_language">Select Language</string>
+    <string name="please_select_language">Please select your language</string>
+    <string name="select_city">Select your city</string>
+    <string name="please_select_city">Please select your city</string>
+    <string name="policy_privacy_contnet"><b>Thank You For Downloading Wallpaper 4K</b>\n\n
+    <b>WE RESPECT ALL ARTIST</b>\n\n If your <b>art/wallpaper</b> use in this application without your permission contact us <b>(ristana.inc@gmail.com)</b> we remove or take action\n\n
+    This privacy policy has been compiled to better serve those who are concerned with how their Personally Identifiable Information (PII) is being used online. PII, as described in US privacy law and information security, is information that can be used on its own or with other information to identify, contact, or locate a single person, or to identify an individual in context. Please read our privacy policy carefully to get a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with our website.\n\n<b>What personal information do we collect from the people that visit our blog, website or app?</b>\n\n When ordering or registering on our site, as appropriate, you may be asked to enter your name, email address or other details to help you with your experience.\n\n <b>When do we collect information?</b>\n\n We collect information from you when you register on our site, Open a Support Ticket or enter information on our site.\n\n <b>How do we use your information?</b>\n\n We may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways: \n\n       • To personalize your experience and to allow us to deliver the type of content and product offerings in which you are most interested. \n\n <b>How do we protect your information?</b>\n\n We do not use vulnerability scanning and/or scanning to PCI standards. \nWe only provide articles and information. We never ask for credit card numbers. \nWe use regular Malware Scanning. \n\n Your personal information is contained behind secured networks and is only accessible by a limited number of persons who have special access rights to such systems, and are required to keep the information confidential. In addition, all sensitive/credit information you supply is encrypted via Secure Socket Layer (SSL) technology. \n\n We implement a variety of security measures when a user enters, submits, or accesses their information to maintain the safety of your personal information. \n\n All transactions are processed through a gateway provider and are not stored or processed on our servers.</string>
+    <string name="write_comment">Write Comment</string>
+    <string name="comment_hidden">Comment hidden</string>
+    <string name="now_time">Now</string>
+    <string name="all_tags">All tags</string>
+    <string name="full_screen">Full Screen</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="welcome_login_text">Login to comment , upload your wallpaper ....</string>
+    <string name="account_disabled">Sorry your account has been locked</string>
+    <string name="login_gg_text">Login with google</string>
+    <string name="message_logout">You are successfully logout</string>
+    <string name="operation_progress">Operation in progress</string>
+    <string name="registre_button_login">New here ? Sign Up</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="login_button">Sign In</string>
+    <string name="registre_button">Sign Up</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_password_confirm">Confirm password</string>
+
+
+    <string name="hint_email">E-mail</string>
+    <string name="hint_name">Full name</string>
+    <string name="error_mail_valide">Please enter a valid E-mail</string>
+    <string name="error_password_short">Please enter a valid password</string>
+    <string name="error_short_value">Your field is too short</string>
+    <string name="error_password_confirm">Passwords do not match</string>
+    <string name="operation_cancelled">Operation has been cancelled !</string>
+    <string name="logout">Logout</string>
+    <string name="edit_name">Edit your name</string>
+    <string name="change_password">Change your password</string>
+    <string name="change_photo">Change your photo</string>
+    <string name="take_picture">Take picture</string>
+    <string name="choose_picture">Choose picture</string>
+    <string name="Cancel">Cancel</string>
+    <string name="profile_pic_edited">Your picture has been updated</string>
+    <string name="please_login">Please sign-in</string>
+    <string name="title_home">Home</string>
+    <string name="action_rate">Rate this app</string>
+    <string name="action_share">Share this App</string>
+    <string name="contact_us">Contact us</string>
+    <string name="policy_privacy">Privacy Policy</string>
+
+    <string name="title_notification">Enable push notifiction</string>
+    <string name="label_notification">Receive push notification</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="label_cache">Clear locally cached images. Currently : </string>
+    <string name="version_label">Current version</string>
+    <string name="hint_message">Your message</string>
+    <string name="send_support">Send Message</string>
+
+    <string name="message_sended">Message has been sent successfully</string>
+    <string name="read_article_from">Read it from :</string>
+    <string name="update_now">Update Now</string>
+
+    <string name="title_surveys">Surveys list</string>
+    <string name="exit">Exit</string>
+    <string name="description_subsribte">With our pack. You can enjoy an ad-free experiance . and focus on the  essential!</string>
+    <string name="retry">Retry</string>
+    <string name="hint_facebook">Facebook url</string>
+    <string name="hint_twitter">Twitter url</string>
+    <string name="hint_instragram">Instagram Url</string>
+    <string name="save">Save</string>
+    <string name="loading">Loading</string>
+    <string name="invalide_url">Invalide Url</string>
+    <string name="loading_user_data">Loading user data</string>
+    <string name="edit_my_profile">Edit my profile</string>
+    <string name="edit_infos">Edit infos</string>
+    <string name="my_profile">My Profile</string>
+    <string name="skip">Skip</string>
+    <string name="world">World</string>
+
+
+</resources>

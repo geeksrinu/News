@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_change_password"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.EditActivity">
+    <com.loopeer.shadow.ShadowView
+        android:paddingBottom="10dp"
+        android:layout_margin="20dp"
+        android:minWidth="125dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:shadowColor="@color/colorPrimary"
+        app:shadowRadius="15dp"
+        app:shadowMargin="15dp"
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="7dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:background="@color/colorPrimary"
+            android:id="@+id/image"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/ic_border_color"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            />
+            <LinearLayout
+
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/image">
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_input_layout_name"
+                    android:layout_width="match_parent"
+                    android:theme="@style/edit_text_view"
+                    app:errorTextAppearance="@color/white"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:textColor="@color/white"
+                        android:theme="@style/edit_text_view"
+                        app:errorTextAppearance="@color/light_white"
+                        android:id="@+id/edit_input_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="text"
+                        android:hint="@string/hint_name" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_input_layout_email"
+                    android:theme="@style/edit_text_view"
+                    app:errorTextAppearance="@color/white"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_input_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:theme="@style/edit_text_view"
+                        app:errorTextAppearance="@color/light_white"                        android:hint="@string/hint_email" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_input_layout_facebook"
+                    android:theme="@style/edit_text_view"
+                    app:errorTextAppearance="@color/white"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_input_facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:theme="@style/edit_text_view"
+                        app:errorTextAppearance="@color/light_white"
+                        android:hint="@string/hint_facebook" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_input_layout_twitter"
+                    android:theme="@style/edit_text_view"
+                    app:errorTextAppearance="@color/white"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_input_twitter"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:theme="@style/edit_text_view"
+                        app:errorTextAppearance="@color/light_white"
+                        android:hint="@string/hint_twitter" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/edit_input_layout_instragram"
+                    android:theme="@style/edit_text_view"
+                    app:errorTextAppearance="@color/white"                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edit_input_instragram"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/white"
+                        android:theme="@style/edit_text_view"
+                        app:errorTextAppearance="@color/light_white"
+                        android:hint="@string/hint_instragram" />
+                </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:text="@string/save"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edit_button"
+                    android:layout_weight="1"
+                    android:padding="16dp"
+                    android:theme="@style/Button_retry"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:elevation="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.loopeer.shadow.ShadowView>
+</RelativeLayout>

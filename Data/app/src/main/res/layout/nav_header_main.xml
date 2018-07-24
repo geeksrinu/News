@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    <RelativeLayout
+        android:id="@+id/acb"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="240dp">
+        <include layout="@layout/wave"></include>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="130dp"
+        android:layout_height="130dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/circle_image_view_profile_nav_header"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="0dp"
+            android:padding="4dp"
+            app:civ_border_color="#FF000000"
+            />
+
+        <ImageView
+            android:id="@+id/image_view_google_nav_header"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/google"
+            android:layout_width="30dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/image_view_facebook_nav_header"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/facebook"
+            android:layout_width="30dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="30dp" />
+        <ImageView
+            android:id="@+id/image_view_email_nav_header"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/email"
+            android:layout_width="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <LinearLayout
+
+        android:layout_marginLeft="140dp"
+        android:visibility="visible"
+        android:layout_marginTop="20dp"
+        android:gravity="left|center"
+        android:orientation="vertical"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <TextView
+            android:layout_margin="15dp"
+            android:id="@+id/text_view_name_nave_header"
+            android:textColor="@color/white"
+            android:textSize="8pt"
+            android:textStyle="bold"
+            android:text="@string/please_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:background="@drawable/border_raduis"
+            android:id="@+id/button_login_nav_header"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="30px"
+            android:visibility="visible"
+            android:text="SIGN IN  !"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="@color/white"
+            />
+
+            <Button
+                android:background="@drawable/border_raduis"
+                android:id="@+id/button_logout_nav_header"
+                android:textSize="30px"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible"
+                android:text="LOGOUT !"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <Button
+                android:layout_marginTop="5dp"
+                android:background="@drawable/border_raduis"
+                android:id="@+id/button_edit_nav_header"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="30px"
+                android:visibility="visible"
+                android:text="ACCOUNT"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textColor="@color/white"
+                />
+
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

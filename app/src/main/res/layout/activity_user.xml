@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.UserActivity"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/acb"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+        <include layout="@layout/wave"></include>
+    </RelativeLayout>
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refreshl_user_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cardView">
+                <RelativeLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp">
+                    <LinearLayout
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_margin="4dp"
+                            android:id="@+id/image_view_activity_user_facebook"
+                            app:srcCompat="@drawable/ic_facebook_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/image_view_activity_user_twitter"
+                            android:layout_margin="4dp"
+                            app:srcCompat="@drawable/ic_twitter_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:layout_margin="4dp"
+                            android:id="@+id/image_view_activity_user_instagram"
+                            android:src="@drawable/ic_instagram_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                        <ImageView
+                            android:visibility="gone"
+                            android:id="@+id/image_view_activity_user_email"
+                            android:layout_margin="4dp"
+                            app:srcCompat="@drawable/ic_email_profile"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp" />
+                    </LinearLayout>
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="20dp"
+                        android:id="@+id/image_view_profile_user_activity"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="0dp"
+                        app:civ_border_color="#FF000000"/>
+
+                    <TextView
+                        android:padding="10dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/text_view_profile_user_activity"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/white"
+                        android:text="Robinson Cruso "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:visibility="visible"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/button_follow_user_activity"
+                        android:textSize="10dp"
+                        android:background="@color/white"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/loading"
+                        android:layout_marginLeft="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" />
+                    <Button
+                        android:visibility="gone"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/button_edit_user_activity"
+                        android:textSize="10dp"
+                        android:background="@color/white"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:text="@string/edit_my_profile"
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relative_followers"
+                android:visibility="visible"
+                android:elevation="0dp"
+                android:layout_below="@id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="45dp">
+                <LinearLayout
+
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp">
+                    <LinearLayout
+                        android:id="@+id/linear_layout_followers"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/border_raduis"
+                        android:layout_height="40dp">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:text="Followers : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_view_followers_count_user_activity"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="left"
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/linear_layout_following"
+                        android:gravity="center"
+                        android:background="@drawable/border_raduis"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"                        android:layout_height="40dp">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="Following : "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/text_view_following_count_activity_user"
+                            android:textColor="@color/white"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="-"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative_followers">
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/relative_layout_user_activity_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include layout="@layout/layout_error"></include>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycle_view_user_activity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                   />
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/image_view_empty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.SwipeRefreshLayout>
+    <RelativeLayout
+        android:padding="7dp"
+        android:visibility="gone"
+        android:id="@+id/relative_layout_load_more"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/loading_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp">
+        <ProgressBar
+            android:progressDrawable="@drawable/progress"
+            android:indeterminateDrawable="@drawable/progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        app:elevation="1dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent" />
+    </android.support.design.widget.AppBarLayout>
+
+</RelativeLayout>

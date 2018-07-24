@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout_city"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    tools:context="com.ristana.newspro.ui.SelectCityActivity">
+    <RelativeLayout
+        android:id="@+id/acb"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+        <include layout="@layout/wave"></include>
+    </RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:padding="5dp"
+        android:id="@+id/RelativeLayout_srach"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:theme="@style/edit_text_view"
+        android:layout_height="50dp">
+        <EditText
+            android:textColorHint="@android:color/white"
+            style="@style/edit_text_view"
+            android:hint="@string/please_select_city"
+            android:id="@+id/edit_text_search_select_city_activity"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayout_srach">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                android:id="@+id/selection_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linear_layout_progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ProgressBar
+                    android:layout_margin="20dp"
+                    android:progressDrawable="@drawable/progress"
+                    android:indeterminateDrawable="@drawable/progress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/linear_layout_page_error"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/layout_error"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

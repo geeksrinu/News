@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.PierfrancescoSoffritti:AndroidYouTubePlayer-4.1.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/dcce19b1ea45fc562ab82a97aa62e185bb3a4077/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/dcce19b1ea45fc562ab82a97aa62e185bb3a4077/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.PierfrancescoSoffritti/AndroidYouTubePlayer/4.1.4/848e90f386af2b14a7d02b9b3494ef3747b73b71/AndroidYouTubePlayer-4.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

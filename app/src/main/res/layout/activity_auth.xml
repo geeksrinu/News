@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:facebook="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.AuthActivity">
+    <com.loopeer.shadow.ShadowView
+        android:layout_margin="20dp"
+        android:minWidth="125dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:shadowColor="@color/colorPrimary"
+        app:shadowRadius="15dp"
+        app:shadowMargin="15dp"
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cornerRadius="7dp">
+        <ScrollView
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <ImageView
+
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image_view_login"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:tint="@color/white"
+                        app:srcCompat="@drawable/ic_user_two"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp" />
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:layout_below="@id/image_view_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#ffff"
+                            android:padding="10dp"
+                            android:textAlignment="center"
+                            android:text="@string/welcome_login_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                        <com.google.android.gms.common.SignInButton
+                            android:layout_above="@+id/sign_in_button_facebook"
+                            android:id="@+id/sign_in_button_google"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:elevation="0dp"
+                            android:layout_marginRight="16dp"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="17dp"
+                            android:layout_marginBottom="3dp"
+                            android:text="login with Google"
+                            />
+                        <com.facebook.login.widget.LoginButton
+                            facebook:com_facebook_login_text="Login with facebook"
+                            android:layout_above="@+id/text_view_skip_login"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/sign_in_button_facebook"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:textSize="15sp"
+                            android:elevation="2dp"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp" />
+                        <Button
+                            android:drawableLeft="@drawable/ic_email_black_24dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:theme="@style/Button_retry"
+                            android:text="Login with E-mail "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button_sign_in_email" />
+                        <Button
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:layout_margin="10dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_alignParentBottom="true"
+                            android:textStyle="bold"
+                            android:textColor="#ffff"
+                            android:text="NOT NOW"
+                            style="?android:attr/borderlessButtonStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text_view_skip_login" />
+                    </LinearLayout>
+                </RelativeLayout>
+        </ScrollView>
+    </com.loopeer.shadow.ShadowView>
+</RelativeLayout>

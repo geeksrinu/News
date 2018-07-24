@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    android:background="@color/white"
+    tools:context="com.ristana.newspro.ui.MainActivity">
+    <RelativeLayout
+        android:id="@+id/acb"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+        <include layout="@layout/wave"></include>
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_horizontal_ntb"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <android.support.design.widget.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <RelativeLayout
+            app:layout_scrollFlags="scroll|enterAlways"
+
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+            <com.arlib.floatingsearchview.FloatingSearchView
+
+                android:id="@+id/main_floating_search_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:floatingSearch_dimBackground="false"
+                app:floatingSearch_backgroundColor="@color/white"
+                app:floatingSearch_searchBarMarginLeft="2dp"
+                app:floatingSearch_searchBarMarginTop="5dp"
+                app:floatingSearch_searchBarMarginRight="2dp"
+                app:floatingSearch_searchHint="Search..."
+                app:floatingSearch_suggestionsListAnimDuration="250"
+                app:floatingSearch_showSearchKey="true"
+                app:floatingSearch_leftActionMode="showHamburger"
+                app:floatingSearch_showVoiceInput="true"
+                app:floatingSearch_menu="@menu/main"
+                frisson:theme="@style/AppTheme.PopupOverlay"
+                app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+        </RelativeLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
+        android:id="@+id/bnve"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        style="@style/bnve_white_bg"
+        app:menu="@menu/menu_navigation_center_fab" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="70dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/colorAccent"
+        app:elevation="6dp"
+        app:borderWidth="1dp"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_local_news" />
+
+</android.support.design.widget.CoordinatorLayout>

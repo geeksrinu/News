@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:frisson="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.ristana.newspro.ui.SearchActivity">
+    <RelativeLayout
+        android:id="@+id/acb"
+        android:background="@drawable/bg_bar"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+        <include layout="@layout/wave"></include>
+    </RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        app:elevation="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:id="@+id/appBarLayout">
+        <android.support.v7.widget.Toolbar
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/transparent" />
+    </android.support.design.widget.AppBarLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBarLayout"
+        android:layout_above="@+id/adView">
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/relative_layout_search_activity_error"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/layout_error"></include>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relative_layout_search_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:progressDrawable="@drawable/progress"
+                android:indeterminateDrawable="@drawable/progress"
+                android:id="@+id/swipe_refreshl_search_activity"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent">
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/image_view_empty"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <android.support.v7.widget.RecyclerView
+                        android:visibility="visible"
+                        android:id="@+id/recycle_view_search_activity"
+                        android:layout_centerInParent="true"
+                        android:layout_height="fill_parent"
+                        android:layout_width="match_parent"/>
+                </LinearLayout>
+            </android.support.v4.widget.SwipeRefreshLayout>
+            <RelativeLayout
+                android:padding="7dp"
+                android:visibility="gone"
+                android:id="@+id/relative_layout_search_activity_load_more"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/loading_bg"
+                android:layout_marginBottom="60dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp">
+                <ProgressBar
+                    android:progressDrawable="@drawable/progress"
+                    android:indeterminateDrawable="@drawable/progress"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:visibility="gone"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/ad_unit_id_banner"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<com.loopeer.shadow.ShadowView
+    app:backgroundColor="@color/colorPrimary"
+    app:shadowColor="@color/colorPrimary"
+    app:shadowRadius="5dp"
+    app:shadowMargin="3dp"
+    android:id="@+id/shadow_view"
+    android:layout_width="wrap_content"
+    android:layout_height="40dp"
+    android:elevation="10dp"
+    app:cornerRadius="1000dp">
+    <RelativeLayout
+        android:padding="2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:visibility="gone"
+            android:textAlignment="center"
+            android:height="30dp"
+            android:minWidth="30dp"
+            android:background="@drawable/tag_number_bg"
+            android:padding="6dp"
+            android:id="@+id/text_view_item_number"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:tint="@color/white"
+            app:srcCompat='@drawable/ic_more'
+            android:layout_marginLeft="7dp"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"/>
+        <TextView
+            android:layout_marginLeft="30dp"
+            android:padding="5dp"
+            android:id="@+id/text_view_item_tag"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/all_tags"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/text_view_item_number"
+            android:layout_toEndOf="@+id/text_view_item_number" />
+    </RelativeLayout>
+</com.loopeer.shadow.ShadowView>
+
+</RelativeLayout>

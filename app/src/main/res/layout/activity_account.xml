@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_account"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.AccountActivity">
+    <com.loopeer.shadow.ShadowView
+        android:paddingBottom="20dp"
+
+        android:minWidth="125dp"
+        app:backgroundColor="@color/colorPrimary"
+        app:shadowColor="@color/colorPrimary"
+        app:shadowRadius="15dp"
+        app:shadowMargin="15dp"
+        android:id="@+id/shadow_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cornerRadius="7dp">
+        <RelativeLayout
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/relativeLayout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <android.support.v7.widget.CardView
+                        app:cardCornerRadius="10dp"
+                        app:cardElevation="10dp"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            app:srcCompat="@drawable/profile"
+                            android:layout_width="130dp"
+                            android:layout_height="130dp"
+                            android:id="@+id/image_view_profile_img" />
+                        <ProgressBar
+                            android:visibility="gone"
+                            android:progressDrawable="@drawable/progress"
+                            android:indeterminateDrawable="@drawable/progress"
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_centerInParent="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="50dp"
+                            android:id="@+id/profile_progress_image" />
+                        <ImageButton
+                            android:id="@+id/Image_button_profile_pic"
+                            android:tint="@color/colorPrimary"
+                            android:theme="@style/Button_retry"
+                            android:layout_marginLeft="85dp"
+                            android:layout_marginTop="85dp"
+                            android:padding="10dp"
+                            app:srcCompat="@drawable/ic_menu_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </android.support.v7.widget.CardView>
+                    <TextView
+                        android:paddingTop="10dp"
+                        android:layout_gravity="center"
+                        android:id="@+id/header_text_view_name"
+                        android:layout_margin="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/white"
+                        android:text="FUll NAME"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="5dp"
+                android:paddingBottom="0dp"
+                android:layout_below="@+id/relativeLayout_1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout_profile"
+                    android:background="@drawable/border_bottom"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/ic_person"
+                        android:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp" />
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/my_profile"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_photo"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bottom"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:padding="1dp"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/ic_menu_camera"
+                        android:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp" />
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/change_photo"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_password"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border_bottom"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:padding="1dp"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/ic_lock_black"
+                        android:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp" />
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/change_password"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/relativeLayout_edit"
+                    android:background="@drawable/border_bottom"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/ic_border_color"
+                        android:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp" />
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/edit_my_profile"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/relativeLayout_logout"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <ImageView
+                        android:padding="5dp"
+                        android:layout_margin="7dp"
+                        app:srcCompat="@drawable/ic_exit_to_app"
+                        android:tint="@color/white"
+                        android:layout_width="30dp"
+                        android:layout_height="45dp" />
+                    <TextView
+                        android:layout_marginLeft="45dp"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/logout"
+                        android:gravity="center|left"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.loopeer.shadow.ShadowView>
+</RelativeLayout>

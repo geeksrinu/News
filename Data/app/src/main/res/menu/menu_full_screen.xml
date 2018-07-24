@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+        android:id="@+id/full_screen"
+        android:orderInCategory="100"
+        android:title="@string/full_screen"
+        android:icon="@drawable/ic_fullscreen"
+        app:showAsAction="always" />
+</menu>
